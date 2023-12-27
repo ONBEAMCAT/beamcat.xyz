@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BEAMCAT - The first memecoin on $BEAM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black overflow-x-hidden">
+    <div id="sparkles-container"></div>
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">BEAMCAT</span>
+            <img
+              class="h-16 w-auto rounded-full"
+              src="/img/logo.gif"
+              alt="BEAMCAT - The first memecoin on $BEAM"
+            />
+          </a>
+        </div>
+        <!-- <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#about" class="text-sm font-semibold leading-6 text-white"
+            >About</a
+          >
+          <a href="#guide" class="text-sm font-semibold leading-6 text-white"
+            >Guide</a
+          >
+          <a
+            href="#tokenomics"
+            class="text-sm font-semibold leading-6 text-white"
+            >Tokenomics</a
+          >
+        </div> -->
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div
+            class="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 hover:scale-105 transform"
+          >
+            <a
+              href="https://swap.onbeam.com/#/swap?outputCurrency=0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E"
+              target="_blank"
+              class="flex h-full w-full items-center justify-center bg-gray-800 px-3 py-3"
+            >
+              <span class="text-2xl font-black text-white font-press-start">
+                Buy $BCAT
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative isolate overflow-hidden pt-8">
+      <img
+        src="/img/beamcat-hero.gif"
+        alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover"
+      />
+      <div
+        class="absolute inset-0 -z-10 bg-[#030003] opacity-50 transform-gpu mix-blend-multiply"
+      ></div>
+      <div class="" aria-hidden="true"></div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-24 lg:py-36">
+        <div class="mb-8 flex justify-center">
+          <div
+            class="relative rounded-full font-press-start items-center flex px-3 py-1 text-sm leading-6 text-gray-100 bg-black/60 ring-1 ring-white/10"
+          >
+            The first memecoin on BEAM
+            <svg
+              width="20"
+              height="17"
+              viewBox="0 0 29 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-1"
+            >
+              <path
+                d="M0 6.25H28.5709V12.5004H0V6.25Z"
+                fill="url(#paint0_linear_511_348)"
+              ></path>
+              <path
+                d="M0 2C0 0.895429 0.895431 0 2 0H26.5706C27.6752 0 28.5706 0.895431 28.5706 2V6.25036H0V2Z"
+                fill="url(#paint1_linear_511_348)"
+              ></path>
+              <path
+                d="M0 18.75H28.5709V23.0004C28.5709 24.1049 27.6755 25.0004 26.5709 25.0004H2C0.895431 25.0004 0 24.1049 0 23.0004V18.75Z"
+                fill="url(#paint2_linear_511_348)"
+              ></path>
+              <path
+                d="M0 12.5024H28.5709V18.7528H0V12.5024Z"
+                fill="url(#paint3_linear_511_348)"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_511_348"
+                  x1="14.1998"
+                  y1="9.52904"
+                  x2="14.1998"
+                  y2="16.5006"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FF6B6B"></stop>
+                  <stop offset="0.33" stop-color="#FE1414"></stop>
+                  <stop offset="0.6" stop-color="#8E0900"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_511_348"
+                  x1="15.6431"
+                  y1="3.27904"
+                  x2="15.6431"
+                  y2="10.2506"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BBDBFF"></stop>
+                  <stop offset="0.33" stop-color="#139EDD"></stop>
+                  <stop offset="0.6" stop-color="#B9F7EA"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_511_348"
+                  x1="14.2861"
+                  y1="22.029"
+                  x2="14.2861"
+                  y2="29.0006"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BBFFCA"></stop>
+                  <stop offset="0.33" stop-color="#48DD13"></stop>
+                  <stop offset="0.6" stop-color="#008805"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_511_348"
+                  x1="14.2861"
+                  y1="15.7815"
+                  x2="14.2861"
+                  y2="22.753"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#F1E869"></stop>
+                  <stop offset="0.33" stop-color="#FEA514"></stop>
+                  <stop offset="0.6" stop-color="#FF4539"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="text-center">
+          <h2
+            class="text-5xl font-bold text-white sm:text-6xl font-press-start"
+          >
+            BEAMCAT
+          </h2>
+          <h1
+            class="text-4xl font-bold tracking-[-1.5rem] text-white sm:text-5xl font-press-start mt-4"
+          >
+            <span class="text-[#BBDBFF]">$</span>
+            <span class="text-[#139EDD]">B</span>
+            <span class="text-[#FF4539]">C</span>
+            <span class="text-[#F1E869]">A</span>
+            <span class="text-[#FEA514]">T</span>
+          </h1>
+          <div
+            class="mt-16 mx-auto flex justify-center items-center gap-x-4 gap-y-10"
+          >
+            <a
+              href="https://twitter.com/ONBEAMCAT"
+              target="_blank"
+              class="p-2 gap-x-2 flex relative rounded-full items-center px-3 py-1 text-md leading-6 text-gray-100 bg-black/60 ring-1 ring-white/10 hover:ring-white/50 hover:scale-105 transform font-press-start"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                fill="white"
+              >
+                <g>
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  ></path>
+                </g>
+              </svg>
+              @ONBEAMCAT
+            </a>
+            <a
+              href="https://swap.onbeam.com/#/swap?outputCurrency=0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E"
+              target="_blank"
+              class="p-2 gap-x-2 flex relative rounded-full items-center px-3 py-1 text-md leading-6 text-gray-100 bg-black/60 ring-1 ring-white/10 hover:ring-white/50 hover:scale-105 transform font-press-start"
+            >
+              <svg
+                width="24"
+                height="19"
+                viewBox="0 0 29 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-1"
+              >
+                <path
+                  d="M0 6.25H28.5709V12.5004H0V6.25Z"
+                  fill="url(#paint0_linear_511_348)"
+                ></path>
+                <path
+                  d="M0 2C0 0.895429 0.895431 0 2 0H26.5706C27.6752 0 28.5706 0.895431 28.5706 2V6.25036H0V2Z"
+                  fill="url(#paint1_linear_511_348)"
+                ></path>
+                <path
+                  d="M0 18.75H28.5709V23.0004C28.5709 24.1049 27.6755 25.0004 26.5709 25.0004H2C0.895431 25.0004 0 24.1049 0 23.0004V18.75Z"
+                  fill="url(#paint2_linear_511_348)"
+                ></path>
+                <path
+                  d="M0 12.5024H28.5709V18.7528H0V12.5024Z"
+                  fill="url(#paint3_linear_511_348)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_511_348"
+                    x1="14.1998"
+                    y1="9.52904"
+                    x2="14.1998"
+                    y2="16.5006"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF6B6B"></stop>
+                    <stop offset="0.33" stop-color="#FE1414"></stop>
+                    <stop offset="0.6" stop-color="#8E0900"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_511_348"
+                    x1="15.6431"
+                    y1="3.27904"
+                    x2="15.6431"
+                    y2="10.2506"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#BBDBFF"></stop>
+                    <stop offset="0.33" stop-color="#139EDD"></stop>
+                    <stop offset="0.6" stop-color="#B9F7EA"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_511_348"
+                    x1="14.2861"
+                    y1="22.029"
+                    x2="14.2861"
+                    y2="29.0006"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#BBFFCA"></stop>
+                    <stop offset="0.33" stop-color="#48DD13"></stop>
+                    <stop offset="0.6" stop-color="#008805"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_511_348"
+                    x1="14.2861"
+                    y1="15.7815"
+                    x2="14.2861"
+                    y2="22.753"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#F1E869"></stop>
+                    <stop offset="0.33" stop-color="#FEA514"></stop>
+                    <stop offset="0.6" stop-color="#FF4539"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              Buy
+            </a>
+            <a
+              href="https://t.co/EotpQh7X4b"
+              target="_blank"
+              class="p-2 gap-x-2 flex relative rounded-full items-center px-3 py-1 text-md leading-6 text-gray-100 bg-black/60 ring-1 ring-white/10 hover:ring-white/50 hover:scale-105 transform font-press-start"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 240 240"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <linearGradient
+                    id="linear-gradient"
+                    x1="120"
+                    y1="240"
+                    x2="120"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1d93d2" />
+                    <stop offset="1" stop-color="#38b0e3" />
+                  </linearGradient>
+                </defs>
+                <title>Telegram_logo</title>
+                <circle
+                  cx="120"
+                  cy="120"
+                  r="120"
+                  fill="url(#linear-gradient)"
+                />
+                <path
+                  d="M81.229,128.772l14.237,39.406s1.78,3.687,3.686,3.687,30.255-29.492,30.255-29.492l31.525-60.89L81.737,118.6Z"
+                  fill="#c8daea"
+                />
+                <path
+                  d="M100.106,138.878l-2.733,29.046s-1.144,8.9,7.754,0,17.415-15.763,17.415-15.763"
+                  fill="#a9c6d8"
+                />
+                <path
+                  d="M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766,0,0,1,1.885,2.055,9.357,9.357,0,0,1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13,0,0,1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27,0,0,1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21,0,0,1,81.486,130.178Z"
+                  fill="#fff"
+                /></svg
+              >TG
+            </a>
+            <a
+              href="https://www.geckoterminal.com/beam/pools/0x3D50d4009F7cdA34793860EB896e1CAab304db9c"
+              target="_blank"
+              class="p-2 gap-x-2 flex relative rounded-full items-center px-3 py-1 text-md leading-6 text-gray-100 bg-black/60 ring-1 ring-white/10 hover:ring-white/50 hover:scale-105 transform font-press-start"
+            >
+              <img
+                width="24"
+                height="24"
+                src="/img/gecko-terminal.png"
+                alt="View chart on Gecko Terminal"
+                class="object-contain"
+              />
+              Chart
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#000000]">
+      <div class="mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-24">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-white sm:text-4xl font-press-start"
+          >
+            About $BCAT
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300">
+            BEAMCAT was launched on December 22, 2023. It is the first memecoin
+            on the BEAM network. Unlike 90% of the memecoin market, it isn't a
+            copy pasted overused meme that has been launched 10 times on every
+            chain. We are still early.
+          </p>
+        </div>
+        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div
+            class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10"
+          >
+            <a
+              href="https://subnets.avax.network/beam/tx/0xed2dff516040bd8abf19f9522594b6b35ace1b7e6120b5f14fdcdcae1a64652f"
+              target="_blank"
+              >LP Burned <span aria-hidden="true">&rarr;</span></a
+            >
+            <a
+              target="_blank"
+              href="https://subnets.avax.network/beam/tx/0x72a9be8e4e246207a3dcbbebb2250d3cab1612e116f7f58a7955e8731853412e?tab=details"
+              >Contract Renounced <span aria-hidden="true">&rarr;</span></a
+            >
+            <a
+              href="https://swap.onbeam.com/#/swap?outputCurrency=0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E"
+              target="_blank"
+              >Buy $BCAT <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+          <dl
+            class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Total Supply</dt>
+              <dd
+                class="text-2xl font-bold leading-9 tracking-tight text-white"
+              >
+                420 Trilion
+              </dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Taxes</dt>
+              <dd
+                class="text-2xl font-bold leading-9 tracking-tight text-white"
+              >
+                0/0
+              </dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Contract</dt>
+              <dd
+                class="text-2xl font-bold leading-9 tracking-tight text-white"
+              >
+                0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#58ccff]">
+      <div class="mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-24">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+          <div class="lg:col-span-5">
+            <h2
+              class="text-3xl font-bold leading-10 tracking-tight text-gray-900 font-press-start"
+            >
+              How to Buy $BCAT
+            </h2>
+            <p class="mt-4 text-base leading-7 text-gray-600 font-press-start">
+              Here's a simple guide on how to bridge your funds to $BEAM and buy
+              $BCAT.
+            </p>
+            <img
+              class="hidden md:inline-block w-[240px] h-[240px] lg:w-[360px] lg:h-[360px]"
+              src="/img/buy-beam-cta.gif"
+              alt="App screenshot"
+            />
+          </div>
+          <div class="mt-10 lg:col-span-7 lg:mt-0">
+            <dl class="space-y-10">
+              <div>
+                <dt
+                  class="text-base font-semibold leading-7 text-gray-900 font-press-start"
+                >
+                  Add the Beam mainnet to your wallet.
+                </dt>
+                <dd
+                  class="mt-2 text-base leading-7 text-gray-600 font-press-start"
+                >
+                  To access Beam, you need to add the network's configuration in
+                  your wallet such as MetaMask.
+                  <div>
+                    <a
+                      class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 shadow hover:bg-indigo-50 font-press-start"
+                      href="https://docs.onbeam.com/chain/get-started/rpc#connect-to-beam-mainnet-with-metamask"
+                      >MetaMask Guide.</a
+                    >
+                  </div>
+                </dd>
+              </div>
+              <div>
+                <dt
+                  class="text-base font-semibold leading-7 text-gray-900 font-press-start"
+                >
+                  Purchase BEAM
+                </dt>
+                <dd
+                  class="mt-2 text-base leading-7 text-gray-600 font-press-start"
+                >
+                  BEAM is the native currency used within the Beam network to
+                  pay for transactions. The BEAM token originates on the
+                  Ethereum blockchain. It can be obtained from various
+                  centralized- and decentralized exchanges
+                  <div>
+                    <a
+                      class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 shadow hover:bg-indigo-50 font-press-start"
+                      href="https://docs.onbeam.com/chain/get-started/gas"
+                      >How to get $BEAM.</a
+                    >
+                  </div>
+                </dd>
+              </div>
+              <div>
+                <dt
+                  class="text-base font-semibold leading-7 text-gray-900 font-press-start"
+                >
+                  Bridge BEAM
+                </dt>
+                <dd
+                  class="mt-2 text-base leading-7 text-gray-600 font-press-start"
+                >
+                  If you got your BEAM on Ethereum, head over to Beam's native
+                  bridge and transfer your BEAM to BEAM mainnet.
+                  <div>
+                    <a
+                      class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 shadow hover:bg-indigo-50 font-press-start"
+                      href="https://bridge.onbeam.com/bridge"
+                      >BEAM Bridge.</a
+                    >
+                  </div>
+                </dd>
+              </div>
+              <div>
+                <dt
+                  class="text-base font-semibold leading-7 text-gray-900 font-press-start"
+                >
+                  Buy $BCAT
+                </dt>
+                <dd
+                  class="mt-2 text-base leading-7 text-gray-600 font-press-start"
+                >
+                  Visit BEAM's native swap to exchange your BEAM for $BCAT. You
+                  can also tokens like AVAX or USDC.
+                  <div>
+                    <a
+                      class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 shadow hover:bg-indigo-50 font-press-start"
+                      href="https://swap.onbeam.com/#/swap?outputCurrency=0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E"
+                      >BEAM Swap</a
+                    >
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black">
+      <div class="mx-auto max-w-7xl overflow-hidden px-6 py-8 sm:py-10 lg:px-8">
+        <!-- <nav
+          class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          aria-label="Footer"
+        >
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >About</a
+            >
+          </div>
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >Blog</a
+            >
+          </div>
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >Jobs</a
+            >
+          </div>
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >Press</a
+            >
+          </div>
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >Accessibility</a
+            >
+          </div>
+          <div class="pb-6">
+            <a
+              href="#"
+              class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >Partners</a
+            >
+          </div>
+        </nav> -->
+        <div class="mt-10 flex justify-center space-x-10">
+          <a
+            href="https://twitter.com/ONBEAMCAT"
+            target="_blank"
+            class="text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">@ONBEAMCAT</span>
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              width="24"
+              height="24"
+              fill="white"
+            >
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://swap.onbeam.com/#/swap?outputCurrency=0x61b24C2755371E0AAfFd5f7fc75a3bc074f9a56E"
+            target="_blank"
+            class="text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">Buy</span>
+            <svg
+              width="24"
+              height="19"
+              viewBox="0 0 29 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-1"
+            >
+              <path
+                d="M0 6.25H28.5709V12.5004H0V6.25Z"
+                fill="url(#paint0_linear_511_348)"
+              ></path>
+              <path
+                d="M0 2C0 0.895429 0.895431 0 2 0H26.5706C27.6752 0 28.5706 0.895431 28.5706 2V6.25036H0V2Z"
+                fill="url(#paint1_linear_511_348)"
+              ></path>
+              <path
+                d="M0 18.75H28.5709V23.0004C28.5709 24.1049 27.6755 25.0004 26.5709 25.0004H2C0.895431 25.0004 0 24.1049 0 23.0004V18.75Z"
+                fill="url(#paint2_linear_511_348)"
+              ></path>
+              <path
+                d="M0 12.5024H28.5709V18.7528H0V12.5024Z"
+                fill="url(#paint3_linear_511_348)"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_511_348"
+                  x1="14.1998"
+                  y1="9.52904"
+                  x2="14.1998"
+                  y2="16.5006"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FF6B6B"></stop>
+                  <stop offset="0.33" stop-color="#FE1414"></stop>
+                  <stop offset="0.6" stop-color="#8E0900"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_511_348"
+                  x1="15.6431"
+                  y1="3.27904"
+                  x2="15.6431"
+                  y2="10.2506"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BBDBFF"></stop>
+                  <stop offset="0.33" stop-color="#139EDD"></stop>
+                  <stop offset="0.6" stop-color="#B9F7EA"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_511_348"
+                  x1="14.2861"
+                  y1="22.029"
+                  x2="14.2861"
+                  y2="29.0006"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BBFFCA"></stop>
+                  <stop offset="0.33" stop-color="#48DD13"></stop>
+                  <stop offset="0.6" stop-color="#008805"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_511_348"
+                  x1="14.2861"
+                  y1="15.7815"
+                  x2="14.2861"
+                  y2="22.753"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#F1E869"></stop>
+                  <stop offset="0.33" stop-color="#FEA514"></stop>
+                  <stop offset="0.6" stop-color="#FF4539"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+          <a
+            href="https://www.geckoterminal.com/beam/pools/0x3D50d4009F7cdA34793860EB896e1CAab304db9c"
+            target="_blank"
+            class="text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">Telegram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 240 240"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="120"
+                  y1="240"
+                  x2="120"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#1d93d2" />
+                  <stop offset="1" stop-color="#38b0e3" />
+                </linearGradient>
+              </defs>
+              <title>Telegram_logo</title>
+              <circle cx="120" cy="120" r="120" fill="url(#linear-gradient)" />
+              <path
+                d="M81.229,128.772l14.237,39.406s1.78,3.687,3.686,3.687,30.255-29.492,30.255-29.492l31.525-60.89L81.737,118.6Z"
+                fill="#c8daea"
+              />
+              <path
+                d="M100.106,138.878l-2.733,29.046s-1.144,8.9,7.754,0,17.415-15.763,17.415-15.763"
+                fill="#a9c6d8"
+              />
+              <path
+                d="M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766,0,0,1,1.885,2.055,9.357,9.357,0,0,1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13,0,0,1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27,0,0,1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21,0,0,1,81.486,130.178Z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.geckoterminal.com/beam/pools/0x3D50d4009F7cdA34793860EB896e1CAab304db9c"
+            target="_blank"
+            class="text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">Gecko Terminal</span>
+            <img
+              width="24"
+              height="24"
+              src="/img/gecko-terminal.png"
+              alt="View chart on Gecko Terminal"
+              class="object-contain"
+            />
+          </a>
+        </div>
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">
+          The content on this website is for informational purposes only and
+          does not constitute financial, investment, or other professional
+          advice. Investing in cryptocurrencies carries inherent risks, and you
+          should perform your own research before making any decisions. BCAT and
+          its team members are not responsible for any losses or damages that
+          may occur as a result of using the information provided on this
+          website.
+        </p>
+      </div>
+    </footer>
+    <script src="/js/sparkle.js"></script>
+  </body>
+</html>
