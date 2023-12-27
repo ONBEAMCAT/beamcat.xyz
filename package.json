@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss styles.css -o src/styles.css",
-    "watch": "postcss styles.css -o src/styles.css -w",
-    "start": "ws -d src -p 3000"
+    "build": "postcss styles.css -o docs/styles.css",
+    "watch": "postcss styles.css -o docs/styles.css -w",
+    "start": "ws -d docs -p 3000"
   },
   "keywords": [],
   "author": "",
